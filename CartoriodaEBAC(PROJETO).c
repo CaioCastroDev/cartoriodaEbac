@@ -18,7 +18,7 @@ int registro() //Função responsável por cadastror os usuarios no sistema
 	printf("Digite o CPF a ser cadastrado: ");		
 	scanf("%s", CPF); // %s refere-se a strings
 		
-	strcpy(arquivo,CPF); //Responsavel por copiar os valores das strings
+	strcpy(arquivo,CPF); //Responsavel por copiar os valores das strings (SENDO O CPF (PRIMER KEY) O QUE VAI DAR NOME AO ARQUIVO). 
 		
 	FILE *file; //cria o arquivo
 	file = fopen(arquivo, "w"); //abre o arquivo criado e o "W" significa Escrever
@@ -71,7 +71,7 @@ int	consulta() //Função responsável por consultar o CPF no banco de dados
 	char conteudo[200];	
 	//final da criação da strings
 			
-	printf("Digite o CPF a ser consultado:");
+	printf("Digite o CPF a ser consultado:"); //recebendo o valor a ser consultado.
 	scanf("%s", CPF);
 	
 	FILE *file; // chama a função arquivo 
